@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula6</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .div1 {
+        border: 5px solid black;
+        width: 100px;
+        font-size: 20px;
+        padding: 0;
+        margin: 10px;
+      }
+
+      /*
+      body > div {
+        border: 5px solid black;
+        width: 100px;
+        font-size: 20px;
+        padding: 0;
+        margin: 10px;
+      }
+      */
+
+      .div2 {
+        border: 1px solid black;
+        padding: 30px 10px;
+      }
+
+      /* width e height não funciona para um elemento de inline */
+      .div3,
+      .div4 {
+        display: inline;
+        border: 1px solid black;
+        width: 100px;
+      }
+
+      .span1,
+      .span2 {
+        display: block;
+      }
+
+      .span3,
+      .span4 {
+        display: inline-block;
+        border: 1px solid black;
+        width: 350px;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">contéudo 1</div>
+
+    <div class="div2">conteúdo 2</div>
+
+    <div class="div3">contéudo 3</div>
+
+    <div class="div4">conteúdo 4</div>
+
+    <br /><br />
+
+    <!-- span em box-model habilitados -->
+    <span class="span1">span 1 em display: block;</span>
+    <span class="span2">span 2 em display: block;</span>
+
+    <br /><br />
+
+    <!-- span com width e height habilitados -->
+    <span class="span3">span 3 em display: inline-block;</span>
+    <span class="span4">span 4 em display: inline-block;</span>
+  </body>
+</html>
