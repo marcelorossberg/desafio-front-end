@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 7</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #estudo-tabelas div {
+        display: inline-block;
+        border: 1px solid #000;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+      }
+
+      /* estudo tabelas */
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid #000;
+        text-align: center;
+      }
+      table td {
+        width: 100px;
+      }
+
+      /* tabela1 */
+      .tabela1 td {
+        width: 180px;
+        border-collapse: collapse;
+        border: 1px solid #000;
+        text-align: center;
+      }
+
+      /* estudo-flexbox */
+      .estudo-flexbox .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+      .estudo-flexbox .header div {
+        border: 1px solid #000;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+      .estudo-flexbox .header div:nth-child(3) {
+        width: 100px;
+      }
+      .estudo-flexbox .banner,
+      .estudo-flexbox .footer {
+        border: 1px solid #000;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+      .estudo-flexbox .conteudo {
+        display: flex;
+        justify-content: space-between;
+      }
+      .estudo-flexbox .conteudo div {
+        border: 1px solid #000;
+        text-align: center;
+        padding: 10px;
+      }
+      .estudo-flexbox .conteudo div:nth-child(1) {
+        width: 80%;
+      }
+      .estudo-flexbox .conteudo div:nth-child(2) {
+        width: 20%;
+      }
+
+      /* estudo-grid */
+    </style>
+  </head>
+  <body>
+    <div id="estudo-tabelas">
+      <div>div 1</div>
+      <div>div 2</div>
+
+      <br /><br />
+
+      <!-- tabelas -->
+      <table>
+        <b>Desafio Front-End Aula 7</b>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monitor</td>
+            <td>1</td>
+            <td>R$ 800,00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br /><br />
+
+      <table class="tabela1">
+        <b>Estrutura de um site por tabela.</b>
+        <tbody>
+          <tr>
+            <td>Logo</td>
+            <td>Home Sobre Cadastro</td>
+            <td>Login</td>
+          </tr>
+          <tr>
+            <td colspan="3">Banner <br /><br /><br /><br /><br /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              Conteúdo
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </td>
+            <td>Publicidade</td>
+          </tr>
+          <tr>
+            <td colspan="3">Footer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br /><br />
+
+    <b>flexbox</b>
+    <div class="estudo-flexbox">
+      <div class="header">
+        <div>Logo</div>
+        <div>Home Sobre Cadastro</div>
+        <div>Login</div>
+      </div>
+
+      <div class="banner">
+        <div>Banner</div>
+      </div>
+
+      <div class="conteudo">
+        <div>Conteúdo</div>
+        <div>Publicidade</div>
+      </div>
+
+      <div class="footer">
+        <div>Footer</div>
+      </div>
+    </div>
+    <br /><br />
+
+    <b>grid</b>
+    <div class="estudo-grid">
+      <div class="header">
+        <div>Logo</div>
+        <div>Home Sobre Cadastro</div>
+        <div>Login</div>
+      </div>
+
+      <div class="banner">
+        <div>Banner</div>
+      </div>
+
+      <div class="conteudo">
+        <div>Conteúdo</div>
+        <div>Publicidade</div>
+      </div>
+
+      <div class="footer">
+        <div>Footer</div>
+      </div>
+    </div>
+
+    <!-- 54:40 -->
+  </body>
+</html>
